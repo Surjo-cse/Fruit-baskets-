@@ -1,10 +1,12 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"   rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,10 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-</head>
+    </head>
+    <script src="https://kit.fontawesome.com/ad85f4de04.js" crossorigin="anonymous"></script>
 
-<body class="font-[Poppins] bg-white  h-screen">
+<body class="font-[Poppins] bg-white  max-w-screen-2xl mx-auto">
     <header class="bg-white">
+       <div>
         <nav class="flex justify-between items-center w-[92%]  mx-auto bg-[#F85559] p-5 mt-10 rounded-full">
             <div
             class="nav-links duration-500 md:static absolute   md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full  flex items-center px-5">
@@ -49,9 +53,163 @@
                   </button>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer   md:hidden"></ion-icon>
             </div>
-    </header>
+       </div>
+      <div>
+        <div class="mt-1">
+            <div class="carousel  my-10 w-full ">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./images/banner1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./images/banner2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./images/banner3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./images/banner4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
 
+      </div>
+    </header>
+<!-- main section starts from here -->
  <main>
+    <div>
+        <div class="flex flex-col md:flex-row mt-20 mx-10 space-y-6">
+            <div class="flex-1 ">
+                <h1 class="text-5xl font-bold ">Deal of the day</h1>
+                <p class="font-light">
+                    Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max flex-1">
+                    <div class="flex flex-col">
+                      <span class="countdown font-semibold text-5xl ">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-semibold text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-semibold text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-se text-5xl font-semibold">
+                        <span style="--value:52;"></span>
+                      </span>
+                      sec
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+            <div class="card   shadow-xl ">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <hr>
+                  <p>Apples</p>
+                  <div class="flex">
+                    <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Dtails</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card   shadow-xl ">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <hr>
+                  <p>Apples</p>
+                  <div class="flex">
+                    <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Dtails</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card   shadow-xl ">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p>Apples</p>
+                  <div class="flex">
+                    <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Dtails</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card   shadow-xl ">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p>Apples</p>
+                  <div class="flex">
+                    <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  <i class="fa-solid fa-star" style="color: #eabd43;"></i>
+                  </div>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Dtails</button>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        <div class="text-center bg-[#F85559] mt-3 text-white p-4 rounded-full mb-10 ">
+            <button>See All</button>
+        </div>
+    </div>   
     
  </main>
 
